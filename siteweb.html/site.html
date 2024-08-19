@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moto Parts - Accueil</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Moto Parts</h1>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="app.showPage('home')">Accueil</a></li>
+          <li><a href="#" onclick="app.showPage('products')">Produits</a></li>
+          <li><a href="#" onclick="app.showPage('blog')">Blog</a></li>
+          <li><a href="#" onclick="app.showPage('login')">Connexion</a></li>
+          <li><a href="#" onclick="app.showPage('cart')">Panier</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- Page d'accueil -->
+      <section id="home" class="page">
+        <div class="hero">
+          <h2>Bienvenue chez Moto expert</h2>
+          <button onclick="app.showPage('products')">Voir nos produits</button>
+        </div>
+        <section class="featured-products">
+          <h3>Produits en vedette</h3>
+          <div id="featured-products" class="product-list">
+            <!-- Les produits en vedette seront ajoutés ici via JavaScript -->
+          </div>
+        </section>
+      </section>
+
+      <!-- Page des produits -->
+      <section id="products" class="page">
+        <h2>Nos Produits</h2>
+        <input
+          type="text"
+          id="search-vin"
+          placeholder="Rechercher par code VIN"
+          oninput="app.searchByVIN()"
+        />
+        <div id="product-list" class="product-list">
+          <!-- Les produits seront ajoutés ici via JavaScript -->
+        </div>
+      </section>
+
+      <!-- Page de connexion -->
+      <section id="login" class="page">
+        <h2>Connexion</h2>
+        <form id="login-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="password">Mot de passe:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Se connecter</button>
+        </form>
+      </section>
+
+      <!-- Page du panier -->
+      <section id="cart" class="page">
+        <h2>Mon Panier</h2>
+        <div id="cart-items">
+          <!-- Les articles du panier seront ajoutés ici via JavaScript -->
+        </div>
+        <p>Total : <span id="total-price">0€</span></p>
+        <button onclick="app.checkout()">Passer à la caisse</button>
+      </section>
+
+      <!-- Page Blog -->
+      <section id="blog" class="page">
+        <h2>Blog</h2>
+        <div id="blog-posts">
+          <!-- Les articles du blog seront ajoutés ici via JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Moto Parts. Tous droits réservés.</p>
+    </footer>
+
+    <div id="notification" class="notification"></div>
+  </body>
+</html>
