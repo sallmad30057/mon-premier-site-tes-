@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link src="style.css" "style.css">
+    <!-- titre de la page -->
+    <title>cours html de zero</title>
+    <!-- titre de l'image -->
+    <link rel="shortcut icon" href="./logohtml.png" />
+  </head>
+  <body>
+    <script src="./index.js"></script>
+    <nav>
+      <ul>
+        <li>Acceuil</li>
+        <li>Boutique</li>
+        <li>Blog</li>
+      </ul>
+    </nav>
+    <head>
+      <!-- 1 seul H1 par page -->
+      <h1>ceci est le titre principales</h1>
+      <h2>test du titre pour un essayer</h2>
+      <p>
+        texte classique <en> texte en italique.</en>
+        <trong> texte en gra </trong>
+      </p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia tempore
+        earum velit sed illo unde amet commodi animi illum iste sequi aut, a et
+        quos quibusdam voluptate, enim pariatur ab?
+      </p>
+    </head>
+
+    <main>
+      <section>
+        <h2>ordered list</h2>
+        <ol>
+          <li>ceci est une</li>
+          <li>liste dans</li>
+          <li>l'orcre</li>
+        </ol>
+      </section>
+      <section>
+        <h3>une image en html</h3>
+        <img src="./image2.webp" height="400" = alt"imge section" />
+        <!-- l 'alt de l'image est pour les non voyant  -->
+        <div>
+          <h4>tableaux</h4>
+          <table
+            border="1"
+            cellpading="50"
+            cellspecing="50"
+            style="text-align: center"
+          >
+            <!-- thead est pour l'entête du tableau -->
+            <thead>
+              <tr>
+                <th>col 1</th>
+                <th>col 2</th>
+                <th>col 3</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">col1</td>
+                <td>col 2</td>
+                <td>col 3</td>
+              </tr>
+              <tr>
+                <td colspan="2">col 4</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h5><span>&#8594;</span>les liens</h5>
+          <!-- ancre en anglai -->
+          <!-- le blank permet de crée un nouvelles onglet  -->
+          <a href="https://htmlcheatsheet.com" target="_blank">
+            html cheat sheet
+          </a>
+        </div>
+        <div>
+          <h6><i>&#128190;</i>video</h6>
+          <video src="./video.mp4"></video>
+          <a href="https://htmlcheatsheet.com"
+            >appyer ici pour trouvé le liens en questions
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
